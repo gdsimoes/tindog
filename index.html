@@ -32,22 +32,45 @@
         <script src="/index.js" type="module"></script>
     </head>
     <body>
-        <header>
-            <img src="images/icon-profile.png" alt="Profile icon" />
-            <img src="images/logo.png" alt="Tindog logo" />
-            <img src="images/icon-chat.png" alt="Chat icon" />
-        </header>
-
-        <main>
-            <article>
-                <img src="images/dog-teddy.jpg" alt="Dog" />
-                <h1>Teddy, 30</h1>
-                <p>How you doin?</p>
-            </article>
-            <div class="swipe">
-                <button class="cross">cross</button>
-                <button class="heart">heart</button>
-            </div>
-        </main>
+        <div class="container">
+            <header>
+                <img
+                    class="icon-profile"
+                    src="images/icon-profile.png"
+                    alt="Profile icon"
+                />
+                <img class="logo" src="images/logo.png" alt="Tindog logo" />
+                <img
+                    class="icon-chat"
+                    src="images/icon-chat.png"
+                    alt="Chat icon"
+                />
+            </header>
+            <main>
+                <article class="current-dog">
+                    <img src="images/dog-teddy.jpg" alt="Dog" />
+                    <div class="dog-header">
+                        <h1>Teddy, 30</h1>
+                        <p>How you doin?</p>
+                    </div>
+                </article>
+                <div class="swipe">
+                    <button class="swipe-button">
+                        <img
+                            class="img-reject"
+                            src="images/icon-cross.png"
+                            alt="Reject"
+                        />
+                    </button>
+                    <button class="swipe-button">
+                        <img
+                            class="img-like"
+                            src="images/icon-heart.png"
+                            alt="Like"
+                        />
+                    </button>
+                </div>
+            </main>
+        </div>
     </body>
 </html>

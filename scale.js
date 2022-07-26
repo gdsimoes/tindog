@@ -18,6 +18,7 @@ function scalar() {
         const ratioWidth = (window.innerWidth / designWidth) * bufferConstant;
         const ratio = Math.min(ratioHeight, ratioWidth);
         container.style.transform = `scale(${ratio})`;
+        body.style.height = `${ratio * designHeight}px`;
     }
 }
 

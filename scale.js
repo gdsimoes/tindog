@@ -5,10 +5,12 @@ function scalar() {
     const bufferConstant = 0.8;
 
     const container = document.querySelector(".container");
+    const body = document.querySelector("body");
 
     if (window.innerWidth < designWidth) {
         const ratio = window.innerWidth / designWidth;
         container.style.transform = `scale(${ratio})`;
+        body.style.height = `${ratio * designHeight}px`;
     } else if (window.innerWidth > designWidth / bufferConstant) {
         // For bigger screens it's best to leave some room on the sides
         const ratioHeight =

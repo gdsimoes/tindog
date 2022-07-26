@@ -3,6 +3,8 @@
     --white-text: #f8f8f8;
     --gray-bg: #e5e5e5;
     --gray-text: #b7b7b7;
+    --green: #dbfff4;
+    --red: #ffe7ef;
 }
 
 /* Typography */
@@ -65,6 +67,8 @@ header {
 main {
     background: linear-gradient(#ffffff, #f6f7fb);
     padding-bottom: 24.13px;
+    /* I had to set this width to make the scale.js module work */
+    width: 550px;
 }
 
 main > * {
@@ -111,13 +115,50 @@ main > * {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: background-color 250ms;
 }
 
-.img-reject {
-    /* width: 25.88px; */
+.reject img {
     height: 36px;
 }
 
-.img-like {
+.reject:hover {
+    background-color: var(--red);
+}
+
+.accept img {
     height: 36px;
+}
+
+.accept:hover {
+    background-color: var(--green);
+}
+
+.like {
+    position: absolute;
+    top: 55.69px;
+    left: 19.4px;
+
+    width: 233.91px;
+    height: 116.26px;
+
+    transform: rotate(-30deg);
+
+    opacity: 0;
+    transition: opacity 250ms;
+}
+
+.nope {
+    position: absolute;
+    top: 55.69px;
+    left: 19.4px;
+
+    width: 233.91px;
+    height: 116.26px;
+
+    transform: rotate(-30deg);
+
+    opacity: 0;
+    transition: opacity 250ms;
 }

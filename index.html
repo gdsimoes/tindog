@@ -29,6 +29,7 @@
         <title>Tindog</title>
 
         <link rel="stylesheet" href="index.css" />
+        <script src="/scale.js" type="module"></script>
         <script src="/index.js" type="module"></script>
     </head>
     <body>
@@ -48,26 +49,25 @@
             </header>
             <main>
                 <article class="current-dog">
-                    <img src="images/dog-teddy.jpg" alt="Dog" />
-                    <div class="dog-header">
-                        <h1>Teddy, 30</h1>
-                        <p>How you doin?</p>
-                    </div>
+                    <div class="dog-header"></div>
+                    <img class="dog-img" src="data:," alt="Dog" />
+                    <img
+                        src="images/badge-like.png"
+                        alt="Like Badge"
+                        class="like"
+                    />
+                    <img
+                        src="images/badge-nope.png"
+                        alt="Nope Badge"
+                        class="nope"
+                    />
                 </article>
                 <div class="swipe">
-                    <button class="swipe-button">
-                        <img
-                            class="img-reject"
-                            src="images/icon-cross.png"
-                            alt="Reject"
-                        />
+                    <button class="swipe-button reject">
+                        <img src="images/icon-cross.png" alt="Reject" />
                     </button>
-                    <button class="swipe-button">
-                        <img
-                            class="img-like"
-                            src="images/icon-heart.png"
-                            alt="Like"
-                        />
+                    <button class="swipe-button accept">
+                        <img src="images/icon-heart.png" alt="Accept" />
                     </button>
                 </div>
             </main>

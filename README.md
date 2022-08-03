@@ -6,7 +6,7 @@ This is the Tinder for Dogs project in the Scrimba Frontend Developer Career Pat
 
 -   [Overview](#overview)
     -   [The challenge](#the-challenge)
-    -   [Stretch Goals](#stretch-goals)
+    -   [Requirements](#requirements)
     -   [Screenshot](#screenshot)
     -   [Links](#links)
 -   [My process](#my-process)
